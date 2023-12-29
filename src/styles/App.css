@@ -1,1 +1,21 @@
+.to-do{
+    width: 400px;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 15px;
+    outline: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
+.to-do-list{
+    width: 80%;
+}
+.to-do-list > li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
