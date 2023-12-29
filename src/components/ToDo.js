@@ -34,12 +34,12 @@ const ToDo = () => {
       </form>
       <ul className="to-do-list">
         {
-          listArr.length>0 ? listArr.map((item)=>(
+          listArr.length>0 && listArr.map((item)=>(
                               <li key={item.id}>
                                 <span>{item.msg}</span>
                                 <button onClick={()=>deleteTodo(item.id)}>Delete</button>
                               </li>
-                              )) : <li>There is no tasks yet</li>
+                              ))
         }
       </ul>
     </div>
